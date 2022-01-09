@@ -1,0 +1,48 @@
+.category {
+  .box-container {
+    @include grid(30rem);
+
+    .box {
+      text-align: center;
+      padding: 3rem 2rem;
+      border: $border;
+
+      &:hover {
+        background: #444;
+        border-radius: 1rem;
+        border-color: $green;
+        i {
+          transform: translateY(-1rem) scale(1.2);
+          color: $black;
+        }
+
+        h3 {
+          color: $white;
+        }
+      }
+
+      i {
+        height: 5.5rem;
+        width: 5.5rem;
+        line-height: 5.5rem;
+        font-size: 2rem;
+        border-radius: 0.5rem;
+        color: $white;
+        background: $green;
+        margin-bottom: 1.5rem;
+      }
+
+      h3 {
+        font-size: 2rem;
+        color: $black;
+      }
+
+      p {
+        font-size: 1.4rem;
+        color: $light-color;
+        line-height: 2;
+        padding-top: 1.5rem;
+      }
+    }
+  }
+}
